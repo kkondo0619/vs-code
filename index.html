@@ -1,4 +1,149 @@
 <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio | ポートフォリオ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --primary: #1976d2;
+            --primary-light: #e3f2fd;
+            --accent: #64b5f6;
+            --text-main: #222;
+            --text-sub: #555;
+            --bg: #f6faff;
+            --card-bg: #fff;
+            --border-radius: 16px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Yu Gothic', 'Meiryo', sans-serif;
+            background: var(--bg);
+            color: var(--text-main);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 70%, var(--accent) 100%);
+            color: #fff;
+            padding: 48px 0 32px 0;
+            text-align: center;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 8px 40px rgba(25,118,210,0.08);
+        }
+        header h1 {
+            font-size: 2.6rem;
+            margin: 0;
+            letter-spacing: 0.04em;
+        }
+        header p {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: #e3f2fd;
+            opacity: 0.92;
+        }
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 18px;
+        }
+        section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 18px rgba(33,150,243,0.07);
+            margin-bottom: 40px;
+            padding: 32px 26px 28px 26px;
+        }
+        section h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.55rem;
+            border-left: 6px solid var(--accent);
+            padding-left: 12px;
+            letter-spacing: 0.02em;
+        }
+        .skills-list, .works-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 14px 26px;
+        }
+        .skills-list li, .works-list li {
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 9px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            box-shadow: 0 1px 8px rgba(33,150,243,0.04);
+        }
+        .works-list li {
+            display: flex;
+            flex-direction: column;
+            min-width: 200px;
+        }
+        .works-title {
+            font-weight: bold;
+            color: var(--text-main);
+            font-size: 1.08em;
+        }
+        .works-desc {
+            font-size: 0.98em;
+            color: var(--text-sub);
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 0 8px;
+            }
+            section {
+                padding: 22px 10px 18px 10px;
+            }
+            header {
+                padding: 38px 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>健吾 近藤 / Kengo Kondo</h1>
+        <p>Webエンジニア志望｜シンプルで心地よい体験づくりを目指しています</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>
+                初めまして。現在、Web技術を中心に学習と制作を進めている近藤健吾です。ユーザーにとって分かりやすく、信頼感のあるサイトづくりが得意です。新しいことにも積極的にチャレンジしています！
+            </p>
+        </section>
+        <section id="skills">
+            <h2>スキル</h2>
+            <ul class="skills-list">
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Git / GitHub</li>
+                <li>VS Code</li>
+                <li>レスポンシブWebデザイン</li>
+                <li>Figma / デザイン基礎</li>
+            </ul>
+        </section>
+        <section id="works">
+            <h2>実績</h2>
+            <ul class="works-list">
+                <li>
+                    <span class="works-title">ポートフォリオサイト作成</span>
+                    <span class="works-desc">HTML/CSS/JavaScriptを用いて、自己紹介用の清潔感のあるWebサイトを制作。</span>
+                </li>
+                <li>
+                    <span class="works-title">Git/GitHubによるファイル管理・公開</span>
+                    <span class="works-desc">ローカル環境からGitHub Pagesへのサイト公開までを一気通貫で実践。</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
 <html>
 <head>
     <meta charset="UTF-8">
